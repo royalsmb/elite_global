@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+    "build": "vite build && python3 build_www.py",
     "preview": "vite preview",
     "start": "vite preview --host 0.0.0.0 --port 3011",
     "clean": "rm -rf dist",

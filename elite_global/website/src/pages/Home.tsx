@@ -72,7 +72,7 @@ export default function Home() {
         {/* Right-side background image */}
         <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
           <img
-            src="/img/elite-global-05.jpeg"
+            src="/assets/elite_global/img/elite-global-05.jpeg"
             alt="Elite Global training session"
             className="w-full h-full object-cover"
           />
@@ -119,7 +119,7 @@ export default function Home() {
             {/* Mobile image */}
             <div className="mt-10 lg:hidden relative">
               <img
-                src="/img/elite-global-05.jpeg"
+                src="/assets/elite_global/img/elite-global-05.jpeg"
                 alt="Elite Global training session"
                 className="w-full h-72 object-cover"
               />
@@ -219,17 +219,17 @@ export default function Home() {
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/img/elite-global-02.jpeg"
+                  src="/assets/elite_global/img/elite-global-02.jpeg"
                   alt="Training group photo"
                   className="w-full h-64 object-cover"
                 />
                 <img
-                  src="/img/elite-global-06.jpeg"
+                  src="/assets/elite_global/img/elite-global-06.jpeg"
                   alt="Oil and gas operations"
                   className="w-full h-64 object-cover"
                 />
                 <img
-                  src="/img/elite-global-09.jpeg"
+                  src="/assets/elite_global/img/elite-global-09.jpeg"
                   alt="Whiteboard session"
                   className="w-full h-64 object-cover col-span-2"
                 />
@@ -271,7 +271,7 @@ export default function Home() {
       <section className="relative py-24 bg-ibm-gray-100 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="/img/elite-global-03.jpeg"
+            src="/assets/elite_global/img/elite-global-03.jpeg"
             alt=""
             className="w-full h-full object-cover"
           />

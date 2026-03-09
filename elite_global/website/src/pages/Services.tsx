@@ -20,7 +20,7 @@ const services = [
     details:
       "Our trainings are practical, interactive, and tailored according to specific goals of your organization. We focus on leadership development, governance, ethics, performance management, customer service excellence, strategic planning and organizational effectiveness.",
     icon: <Users className="w-8 h-8" />,
-    image: "/img/elite-global-18.jpeg",
+    image: "/assets/elite_global/img/elite-global-18.jpeg",
     highlights: [
       "Leadership Development",
       "Governance & Ethics",
@@ -38,7 +38,7 @@ const services = [
     details:
       "We closely work with the management team to provide strategic insights, conduct market analyses, and develop actionable business plans that drive sustainable results. Be it a startup or established company, our solutions are customized to align with your business vision.",
     icon: <Briefcase className="w-8 h-8" />,
-    image: "/img/elite-global-04.jpeg",
+    image: "/assets/elite_global/img/elite-global-04.jpeg",
     highlights: [
       "Strategic Insights",
       "Market Analyses",
@@ -56,7 +56,7 @@ const services = [
     details:
       "We support institutions in developing adequate management systems and policies that bolster accountability, transparency, and efficiency. With vast experience, our consultants will guide your organization towards strategic transformation and long-term success.",
     icon: <Settings className="w-8 h-8" />,
-    image: "/img/elite-global-11.jpeg",
+    image: "/assets/elite_global/img/elite-global-11.jpeg",
     highlights: [
       "Corporate Governance",
       "Performance Management",
@@ -74,7 +74,7 @@ const services = [
     details:
       "Our services under this category cover recruitment and selection, employee training and development, performance appraisal systems, and HR policy formulation. We help institutions build strong, motivated teams aligned with their strategic objectives.",
     icon: <UserCheck className="w-8 h-8" />,
-    image: "/img/elite-global-10.jpeg",
+    image: "/assets/elite_global/img/elite-global-10.jpeg",
     highlights: [
       "Recruitment & Selection",
       "Employee Training & Development",
@@ -92,7 +92,7 @@ const services = [
     details:
       "Our expertise includes retail station management, operational efficiency, compliance, and safety standards. Such training extends to station managers, supervisors, and service attendants with the aim of improving productivity, customer satisfaction, and profitability throughout your operations.",
     icon: <Fuel className="w-8 h-8" />,
-    image: "/img/elite-global-06.jpeg",
+    image: "/assets/elite_global/img/elite-global-06.jpeg",
     highlights: [
       "Retail Station Management",
       "Operational Efficiency",
@@ -110,7 +110,7 @@ const services = [
     details:
       "Our procurement expertise covers strategic sourcing, supplier evaluation and management, tender preparation and evaluation, contract management, and procurement policy development. We help both public and private sector institutions build efficient, accountable procurement systems aligned with best practices.",
     icon: <ShoppingCart className="w-8 h-8" />,
-    image: "/img/elite-global-28.jpeg",
+    image: "/assets/elite_global/img/elite-global-28.jpeg",
     highlights: [
       "Strategic Sourcing",
       "Supplier Evaluation",
@@ -129,7 +129,7 @@ export default function Services() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 bg-ibm-gray-100 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-15">
           <img
-            src="/img/elite-global-14.jpeg"
+            src="/assets/elite_global/img/elite-global-14.jpeg"
             alt=""
             className="w-full h-full object-cover"
           />

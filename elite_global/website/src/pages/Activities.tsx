@@ -28,8 +28,8 @@ const fallbackActivities: Activity[] = [
       "We are thrilled to have commenced a week long training program on Improving Revenue Performance and Supervisory Effectiveness in Revenue Controls.",
     description:
       "This intensive training program focuses on reinforcing leadership capacity among supervisors and revenue officers to ensure strict compliance with revenue procedures, improved monitoring systems, and a culture of integrity and accountability. By enhancing supervisory competencies in areas such as internal controls, performance monitoring, staff discipline, reporting accuracy, and ethical oversight, the organization can establish a stronger control environment that minimizes revenue losses and boosts operational efficiency.",
-    image_1: "/img/elite-global-01.jpeg",
-    image_2: "/img/elite-global-02.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-01.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-02.jpeg",
     tags: ["training", "revenue", "gambia", "africa"],
   },
   {
@@ -43,8 +43,8 @@ const fallbackActivities: Activity[] = [
       "Our team conducted an on-site field visit to petroleum storage and distribution facilities as part of our downstream oil and gas consultancy services.",
     description:
       "Elite Global Consultancy's oil and gas team carried out comprehensive field assessments at petroleum storage depots and distribution terminals. The visit covered safety compliance reviews, operational efficiency evaluations, and hands-on training for facility personnel. Our experts worked alongside station managers and supervisors to identify areas for improvement in safety standards, product handling, and environmental compliance.",
-    image_1: "/img/elite-global-06.jpeg",
-    image_2: "/img/elite-global-07.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-06.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-07.jpeg",
     tags: ["oil-gas", "safety", "downstream", "field-visit"],
   },
   {
@@ -57,8 +57,8 @@ const fallbackActivities: Activity[] = [
       "Elite Global delivered a comprehensive customer service excellence training program for fuel station supervisors and service attendants.",
     description:
       "The training focused on improving customer interactions, handling complaints effectively, and building a service-oriented culture at retail fuel stations. Participants engaged in interactive group exercises, role-playing scenarios, and presentations to develop practical skills they can immediately apply in their daily operations. The program aimed to boost customer satisfaction, increase repeat business, and enhance the overall brand reputation of the stations.",
-    image_1: "/img/elite-global-14.jpeg",
-    image_2: "/img/elite-global-18.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-14.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-18.jpeg",
     tags: ["training", "customer-service", "oil-gas"],
   },
   {
@@ -71,8 +71,8 @@ const fallbackActivities: Activity[] = [
       "Our team conducted station management training at Petrosen facilities, focusing on operational efficiency, compliance, and profitability optimization.",
     description:
       "Elite Global Consultancy partnered with Petrosen to deliver targeted training for station managers and supervisors. The program covered key areas including inventory management, fuel loss prevention, health and safety compliance, staff supervision, and customer service protocols. Participants also visited operational sites to gain hands-on understanding of best practices in downstream petroleum operations.",
-    image_1: "/img/elite-global-30.jpeg",
-    image_2: "/img/elite-global-28.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-30.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-28.jpeg",
     tags: ["oil-gas", "petrosen", "station-management"],
   },
   {
@@ -85,8 +85,8 @@ const fallbackActivities: Activity[] = [
       "A multi-day corporate governance workshop was conducted for senior management and board members to strengthen institutional accountability frameworks.",
     description:
       "Elite Global Consultancy facilitated an intensive workshop on corporate governance, focusing on board effectiveness, risk management, ethical leadership, and transparency in organizational decision-making. The workshop brought together senior executives, department heads, and board members for interactive sessions, case study analyses, and strategic planning exercises. Participants developed actionable governance frameworks tailored to their organizations.",
-    image_1: "/img/elite-global-04.jpeg",
-    image_2: "/img/elite-global-11.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-04.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-11.jpeg",
     tags: ["governance", "accountability", "leadership"],
   },
   {
@@ -99,8 +99,8 @@ const fallbackActivities: Activity[] = [
       "Elite Global delivered HR capacity building sessions focused on performance appraisal systems, employee development, and HR policy formulation.",
     description:
       "This training program was designed to equip HR professionals and managers with modern tools and techniques for effective human resource management. Topics covered included designing performance appraisal systems, conducting effective employee evaluations, creating development plans, and formulating HR policies aligned with organizational objectives. The hands-on approach ensured participants left with practical frameworks they could implement immediately.",
-    image_1: "/img/elite-global-40.jpeg",
-    image_2: "/img/elite-global-43.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-40.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-43.jpeg",
     tags: ["HR", "performance-management", "capacity-building"],
   },
   {
@@ -113,8 +113,8 @@ const fallbackActivities: Activity[] = [
       "Elite Global Consultancy hosted a strategic meeting with international partners to explore new avenues for collaboration in capacity building across West Africa.",
     description:
       "Our leadership team met with international stakeholders to discuss expanding our consultancy and training services across the West African region. The meeting focused on identifying joint ventures, knowledge exchange opportunities, and collaborative training programs that would benefit organizations in The Gambia and neighboring countries. This partnership aligns with our vision to become the leading consultancy firm in the region.",
-    image_1: "/img/elite-global-35.jpeg",
-    image_2: "/img/elite-global-37.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-35.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-37.jpeg",
     tags: ["partnership", "international", "west-africa"],
   },
   {
@@ -127,8 +127,8 @@ const fallbackActivities: Activity[] = [
       "A comprehensive financial management training was conducted for finance officers and department heads on budgeting, financial reporting, and accountability.",
     description:
       "Elite Global Consultancy delivered a practical training program on financial management covering budgeting techniques, financial statement analysis, internal audit procedures, and fiscal accountability. The training included hands-on exercises using real-world financial scenarios, whiteboard sessions on calculation methodologies, and group discussions on best practices in public and private sector financial management.",
-    image_1: "/img/elite-global-09.jpeg",
-    image_2: "/img/elite-global-03.jpeg",
+    image_1: "/assets/elite_global/img/elite-global-09.jpeg",
+    image_2: "/assets/elite_global/img/elite-global-03.jpeg",
     tags: ["finance", "budgeting", "training"],
   },
 ];
@@ -196,7 +196,7 @@ export default function Activities() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 bg-ibm-gray-100 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-15">
           <img
-            src="/img/elite-global-01.jpeg"
+            src="/assets/elite_global/img/elite-global-01.jpeg"
             alt=""
             className="w-full h-full object-cover"
           />

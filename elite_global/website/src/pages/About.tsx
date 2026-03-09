@@ -71,7 +71,7 @@ export default function About() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-24 bg-ibm-gray-100 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-15">
           <img
-            src="/img/elite-global-02.jpeg"
+            src="/assets/elite_global/img/elite-global-02.jpeg"
             alt=""
             className="w-full h-full object-cover"
           />
@@ -150,18 +150,18 @@ export default function About() {
               className="space-y-4"
             >
               <img
-                src="/img/elite-global-35.jpeg"
+                src="/assets/elite_global/img/elite-global-35.jpeg"
                 alt="Elite Global partnership"
                 className="w-full h-72 object-cover"
               />
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/img/elite-global-03.jpeg"
+                  src="/assets/elite_global/img/elite-global-03.jpeg"
                   alt="Training session"
                   className="w-full h-48 object-cover"
                 />
                 <img
-                  src="/img/elite-global-07.jpeg"
+                  src="/assets/elite_global/img/elite-global-07.jpeg"
                   alt="Oil and gas field work"
                   className="w-full h-48 object-cover"
                 />
@@ -305,18 +305,18 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div className="col-span-2 row-span-2">
               <img
-                src="/img/elite-global-02.jpeg"
+                src="/assets/elite_global/img/elite-global-02.jpeg"
                 alt="Elite Global team"
                 className="w-full h-full object-cover"
               />
             </div>
             <img
-              src="/img/elite-global-43.jpeg"
+              src="/assets/elite_global/img/elite-global-43.jpeg"
               alt="Team meeting"
               className="w-full h-64 object-cover"
             />
             <img
-              src="/img/elite-global-10.jpeg"
+              src="/assets/elite_global/img/elite-global-10.jpeg"
               alt="Training group"
               className="w-full h-64 object-cover"
             />

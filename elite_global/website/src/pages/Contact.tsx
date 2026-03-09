@@ -153,7 +153,7 @@ export default function Contact() {
 
               <div className="mt-10">
                 <img
-                  src="/img/elite-global-22.jpeg"
+                  src="/assets/elite_global/img/elite-global-22.jpeg"
                   alt="Team training session"
                   className="w-full h-48 object-cover"
                 />
