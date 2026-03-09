@@ -45,6 +45,7 @@ export default function Navbar() {
               { to: "/", label: "Home" },
               { to: "/services", label: "Services" },
               { to: "/about", label: "About" },
+              { to: "/activities", label: "Activities" },
             ].map((link) => (
               <Link
                 key={link.to}
@@ -94,6 +95,7 @@ export default function Navbar() {
                 { to: "/", label: "Home" },
                 { to: "/services", label: "Services" },
                 { to: "/about", label: "About" },
+                { to: "/activities", label: "Activities" },
                 { to: "/contact", label: "Contact" },
               ].map((link) => (
                 <Link

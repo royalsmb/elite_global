@@ -30,6 +30,7 @@ export default function Footer() {
                 { to: "/", label: "Home" },
                 { to: "/services", label: "Services" },
                 { to: "/about", label: "About Us" },
+                { to: "/activities", label: "Activities" },
                 { to: "/contact", label: "Contact" },
               ].map((link) => (
                 <Link

@@ -1,0 +1,137 @@
+{
+  "actions": [],
+  "allow_guest_to_view": 1,
+  "autoname": "format:{title}-{####}",
+  "creation": "2026-03-09 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "title",
+    "category",
+    "date",
+    "column_break_1",
+    "published",
+    "slug",
+    "section_break_content",
+    "summary",
+    "description",
+    "section_break_images",
+    "image_1",
+    "column_break_images",
+    "image_2",
+    "section_break_tags",
+    "tags"
+  ],
+  "fields": [
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Title",
+      "reqd": 1
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "in_list_view": 1,
+      "label": "Category",
+      "options": "Corporate Training\nBusiness Consultancy\nManagement Consultancy\nHuman Resource Management\nOil & Gas\nProcurement",
+      "reqd": 1
+    },
+    {
+      "fieldname": "date",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "label": "Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "column_break_1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "default": "0",
+      "fieldname": "published",
+      "fieldtype": "Check",
+      "in_list_view": 1,
+      "label": "Published"
+    },
+    {
+      "fieldname": "slug",
+      "fieldtype": "Data",
+      "label": "Slug",
+      "unique": 1
+    },
+    {
+      "fieldname": "section_break_content",
+      "fieldtype": "Section Break",
+      "label": "Content"
+    },
+    {
+      "fieldname": "summary",
+      "fieldtype": "Small Text",
+      "label": "Summary",
+      "reqd": 1
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text Editor",
+      "label": "Description"
+    },
+    {
+      "fieldname": "section_break_images",
+      "fieldtype": "Section Break",
+      "label": "Images"
+    },
+    {
+      "fieldname": "image_1",
+      "fieldtype": "Attach Image",
+      "label": "Image 1"
+    },
+    {
+      "fieldname": "column_break_images",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "image_2",
+      "fieldtype": "Attach Image",
+      "label": "Image 2"
+    },
+    {
+      "fieldname": "section_break_tags",
+      "fieldtype": "Section Break",
+      "label": "Tags"
+    },
+    {
+      "fieldname": "tags",
+      "fieldtype": "Small Text",
+      "label": "Tags",
+      "description": "Comma-separated tags, e.g. training, revenue, gambia"
+    }
+  ],
+  "index_web_pages_for_search": 0,
+  "links": [],
+  "modified": "2026-03-09 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Elite Global",
+  "name": "Elite Global Activity",
+  "naming_rule": "Expression",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "date",
+  "sort_order": "DESC",
+  "title_field": "title"
+}
