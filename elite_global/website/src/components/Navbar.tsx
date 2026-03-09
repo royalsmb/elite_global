@@ -19,7 +19,9 @@ export default function Navbar() {
     window.scrollTo(0, 0);
   }, [location]);
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) =>
+    location.pathname === path ||
+    (path === "/home" && location.pathname === "/");
 
   return (
     <nav
@@ -31,7 +33,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 border-b border-ibm-gray-20/50">
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/home" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-ibm-blue-60 flex items-center justify-center text-white font-bold text-sm">
               E
             </div>
@@ -42,7 +44,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8">
             {[
-              { to: "/", label: "Home" },
+              { to: "/home", label: "Home" },
               { to: "/services", label: "Services" },
               { to: "/about", label: "About" },
               { to: "/activities", label: "Activities" },
@@ -92,7 +94,7 @@ export default function Navbar() {
           >
             <div className="px-4 py-6 space-y-1">
               {[
-                { to: "/", label: "Home" },
+                { to: "/home", label: "Home" },
                 { to: "/services", label: "Services" },
                 { to: "/about", label: "About" },
                 { to: "/activities", label: "Activities" },

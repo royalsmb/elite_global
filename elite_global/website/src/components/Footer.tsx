@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 py-16 border-b border-ibm-gray-80">
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-6">
+            <Link to="/home" className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-ibm-blue-60 flex items-center justify-center text-white font-bold text-sm">
                 E
               </div>
@@ -27,7 +27,7 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {[
-                { to: "/", label: "Home" },
+                { to: "/home", label: "Home" },
                 { to: "/services", label: "Services" },
                 { to: "/about", label: "About Us" },
                 { to: "/activities", label: "Activities" },
