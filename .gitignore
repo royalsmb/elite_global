@@ -5,6 +5,6 @@
 tags
 node_modules
 __pycache__
-dist/
+elite_global/website/dist/
 .env
 bun.lock
