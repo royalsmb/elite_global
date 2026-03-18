@@ -171,8 +171,91 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* CEO Profile */}
       <section className="py-24 bg-ibm-gray-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-5 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-2"
+            >
+              <div className="relative">
+                <img
+                  src="/assets/elite_global/img/ceo-dr-momodou-faye.jpeg"
+                  alt="Dr. Momodou Faye — CEO, Elite Global Consultancy"
+                  className="w-full aspect-[3/4] object-cover object-top"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                  <h4 className="text-white text-xl font-semibold">
+                    Dr. Momodou Faye
+                  </h4>
+                  <p className="text-ibm-blue-40 text-sm font-mono uppercase tracking-widest">
+                    Chief Executive Officer
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-3"
+            >
+              <h2 className="text-sm font-mono text-ibm-blue-60 uppercase tracking-[0.2em] mb-4">
+                Leadership
+              </h2>
+              <h3 className="text-4xl font-light mb-8">
+                Meet Our <span className="font-semibold">CEO</span>
+              </h3>
+              <div className="space-y-6 text-ibm-gray-80 leading-relaxed">
+                <p>
+                  Dr. Momodou Faye is the founder and Chief Executive Officer of
+                  Elite Global Consultancy Co. Ltd. With extensive expertise in
+                  corporate governance, management consultancy, and capacity
+                  building, he has dedicated his career to empowering
+                  organizations across The Gambia and beyond.
+                </p>
+                <p>
+                  Under his leadership, Elite Global has grown into a trusted
+                  partner for businesses and institutions seeking to strengthen
+                  their operations, develop their workforce, and achieve
+                  sustainable growth. His vision for organizational excellence
+                  drives the company's commitment to delivering practical,
+                  results-oriented solutions.
+                </p>
+                <p>
+                  Dr. Faye brings deep industry knowledge spanning Oil & Gas
+                  downstream operations, human resource management, procurement,
+                  and corporate training — ensuring that Elite Global's services
+                  are grounded in real-world expertise.
+                </p>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                {[
+                  "Corporate Governance",
+                  "Strategic Leadership",
+                  "Oil & Gas",
+                  "Capacity Building",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-4 py-2 bg-white border border-ibm-gray-20 text-sm text-ibm-gray-80 font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8">
             <motion.div
