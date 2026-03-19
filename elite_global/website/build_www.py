@@ -54,6 +54,8 @@ def generate_page_html(page_name, title, description, js_name, css_name):
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content="{description}" />
+    <link rel="icon" type="image/x-icon" href="/assets/elite_global/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/elite_global/img/favicon-180.png" />
     <script type="module" crossorigin src="/assets/elite_global/dist/js/{js_name}"></script>
     <link rel="stylesheet" crossorigin href="/assets/elite_global/dist/css/{css_name}" />
 </head>
