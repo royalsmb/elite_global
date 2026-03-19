@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import {
@@ -10,6 +11,8 @@ import {
   Fuel,
   ShoppingCart,
   ArrowRight,
+  Quote,
+  Star,
 } from "lucide-react";
 
 const services = [
@@ -57,6 +60,42 @@ const services = [
   },
 ];
 
+interface Testimonial {
+  full_name: string;
+  designation?: string;
+  organization?: string;
+  rating: string;
+  testimonial: string;
+  image?: string;
+}
+
+const fallbackTestimonials: Testimonial[] = [
+  {
+    full_name: "Amadou Jallow",
+    designation: "Managing Director",
+    organization: "Gambia National Petroleum Corporation",
+    rating: "5",
+    testimonial:
+      "Elite Global's corporate training programs transformed how our management team approaches strategic planning. Their hands-on methodology and deep industry knowledge made a real difference.",
+  },
+  {
+    full_name: "Fatou Ceesay",
+    designation: "HR Director",
+    organization: "Trust Bank Limited",
+    rating: "5",
+    testimonial:
+      "The HR capacity building workshop delivered by Elite Global was outstanding. Our team gained practical tools for performance management that we immediately put into practice.",
+  },
+  {
+    full_name: "Ousman Sowe",
+    designation: "Operations Manager",
+    organization: "Petrosen Energy",
+    rating: "5",
+    testimonial:
+      "Their expertise in the Oil & Gas downstream sector is unmatched in The Gambia. Elite Global helped us streamline our operations and improve compliance across the board.",
+  },
+];
+
 const stats = [
   { value: "10+", label: "Years Experience" },
   { value: "100+", label: "Trainings Delivered" },
@@ -65,6 +104,19 @@ const stats = [
 ];
 
 export default function Home() {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>(fallbackTestimonials);
+
+  useEffect(() => {
+    fetch("/api/method/elite_global.api.get_testimonials")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.message && data.message.length > 0) {
+          setTestimonials(data.message);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -263,6 +315,73 @@ export default function Home() {
                 About Us <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 bg-ibm-gray-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-center">
+            <h2 className="text-sm font-mono text-ibm-blue-60 uppercase tracking-[0.2em] mb-4">
+              Testimonials
+            </h2>
+            <h3 className="text-4xl md:text-5xl font-light">
+              What Our <span className="font-semibold">Clients Say</span>
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {testimonials.map((t, index) => (
+              <motion.div
+                key={t.full_name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-8 border-t-4 border-ibm-blue-60 flex flex-col"
+              >
+                <Quote className="w-8 h-8 text-ibm-blue-60/20 mb-4" />
+                <p className="text-ibm-gray-80 leading-relaxed flex-1 mb-6">
+                  "{t.testimonial}"
+                </p>
+                <div className="flex items-center gap-2 mb-4">
+                  {Array.from({ length: parseInt(t.rating) || 5 }).map(
+                    (_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 fill-ibm-blue-60 text-ibm-blue-60"
+                      />
+                    )
+                  )}
+                </div>
+                <div className="flex items-center gap-3 pt-4 border-t border-ibm-gray-20/50">
+                  {t.image ? (
+                    <img
+                      src={t.image}
+                      alt={t.full_name}
+                      className="w-10 h-10 rounded-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-10 h-10 rounded-full bg-ibm-blue-60 flex items-center justify-center text-white font-semibold text-sm">
+                      {t.full_name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")
+                        .slice(0, 2)}
+                    </div>
+                  )}
+                  <div>
+                    <p className="font-semibold text-sm">{t.full_name}</p>
+                    <p className="text-xs text-ibm-gray-80">
+                      {[t.designation, t.organization]
+                        .filter(Boolean)
+                        .join(", ")}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

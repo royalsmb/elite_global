@@ -28,3 +28,21 @@ def get_activities():
 		]
 
 	return activities
+
+
+@frappe.whitelist(allow_guest=True)
+def get_testimonials():
+	"""Return published testimonials for the website."""
+	return frappe.get_all(
+		"Elite Global Testimonial",
+		filters={"published": 1},
+		fields=[
+			"full_name",
+			"designation",
+			"organization",
+			"rating",
+			"testimonial",
+			"image",
+		],
+		order_by="display_order asc",
+	)
