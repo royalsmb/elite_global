@@ -171,10 +171,20 @@ export default function About() {
         </div>
       </section>
 
-      {/* CEO Profile */}
+      {/* Leadership */}
       <section className="py-24 bg-ibm-gray-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-5 gap-16 items-center">
+          <div className="mb-16">
+            <h2 className="text-sm font-mono text-ibm-blue-60 uppercase tracking-[0.2em] mb-4">
+              Leadership
+            </h2>
+            <h3 className="text-4xl font-light">
+              Meet Our <span className="font-semibold">Leaders</span>
+            </h3>
+          </div>
+
+          {/* CEO - Dr. Fatima Ella Ba */}
+          <div className="grid lg:grid-cols-5 gap-16 items-center mb-24">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -183,13 +193,13 @@ export default function About() {
             >
               <div className="relative">
                 <img
-                  src="/assets/elite_global/img/ceo-dr-momodou-faye.jpeg"
-                  alt="Dr. Momodou Faye — CEO, Elite Global Consultancy"
+                  src="/assets/elite_global/img/ceo.jpeg"
+                  alt="Dr. Fatima Ella Ba — CEO, Elite Global Consultancy"
                   className="w-full aspect-[3/4] object-cover object-top"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
                   <h4 className="text-white text-xl font-semibold">
-                    Dr. Momodou Faye
+                    Dr. Fatima Ella Ba
                   </h4>
                   <p className="text-ibm-blue-40 text-sm font-mono uppercase tracking-widest">
                     Chief Executive Officer
@@ -204,41 +214,90 @@ export default function About() {
               viewport={{ once: true }}
               className="lg:col-span-3"
             >
-              <h2 className="text-sm font-mono text-ibm-blue-60 uppercase tracking-[0.2em] mb-4">
-                Leadership
-              </h2>
-              <h3 className="text-4xl font-light mb-8">
-                Meet Our <span className="font-semibold">CEO</span>
+              <h3 className="text-3xl font-light mb-2">
+                Dr. Fatima Ella Ba
               </h3>
+              <p className="text-ibm-blue-60 font-mono text-sm uppercase tracking-widest mb-8">
+                Chief Executive Officer
+              </p>
               <div className="space-y-6 text-ibm-gray-80 leading-relaxed">
                 <p>
-                  Dr. Momodou Faye is the founder and Chief Executive Officer of
-                  Elite Global Consultancy Co. Ltd. With extensive expertise in
-                  corporate governance, management consultancy, and capacity
-                  building, he has dedicated his career to empowering
-                  organizations across The Gambia and beyond.
+                  Dr. Fatima Ella Ba is the Chief Executive Officer of Elite
+                  Global Consultancy Co. Ltd. She brings extensive experience in
+                  Human Resources management and development, with a great
+                  interest in teamwork, administrative management, communication,
+                  and leadership.
                 </p>
                 <p>
-                  Under his leadership, Elite Global has grown into a trusted
-                  partner for businesses and institutions seeking to strengthen
-                  their operations, develop their workforce, and achieve
-                  sustainable growth. His vision for organizational excellence
-                  drives the company's commitment to delivering practical,
-                  results-oriented solutions.
+                  A graduate of the University of Salford, UK, Dr. Ba has over 20
+                  years' experience in Administrative Management and is qualified
+                  with a PhD, MSc, and BSc degree in Human Resources Management
+                  and Development. She is an associated member of the Institute
+                  of Administrative Management (InstAM Dip) and CIPD.
+                </p>
+                <p>
+                  Dr. Ba has managed staff and run health care facilities within
+                  the NHS (National Health Service) in the UK, Republic of
+                  Ireland, and The Gambia. She is highly experienced in early
+                  childhood development, with over 18 years of experience, and is
+                  a qualified Early Childhood trainer and Practitioner.
+                </p>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                {[
+                  "Human Resources",
+                  "Administrative Management",
+                  "Healthcare Management",
+                  "Early Childhood Development",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-4 py-2 bg-white border border-ibm-gray-20 text-sm text-ibm-gray-80 font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Deputy CEO - Dr. Momodou Faye */}
+          <div className="grid lg:grid-cols-5 gap-16 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-3 order-2 lg:order-1"
+            >
+              <h3 className="text-3xl font-light mb-2">
+                Dr. Momodou Faye
+              </h3>
+              <p className="text-ibm-blue-60 font-mono text-sm uppercase tracking-widest mb-8">
+                Deputy Chief Executive Officer
+              </p>
+              <div className="space-y-6 text-ibm-gray-80 leading-relaxed">
+                <p>
+                  Dr. Momodou Faye serves as the Deputy Chief Executive Officer
+                  of Elite Global Consultancy Co. Ltd. With extensive expertise
+                  in corporate governance, management consultancy, and capacity
+                  building, he plays a pivotal role in driving the company's
+                  strategic vision and operations.
                 </p>
                 <p>
                   Dr. Faye brings deep industry knowledge spanning Oil & Gas
                   downstream operations, human resource management, procurement,
                   and corporate training — ensuring that Elite Global's services
-                  are grounded in real-world expertise.
+                  are grounded in real-world expertise and deliver measurable
+                  results.
                 </p>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 {[
                   "Corporate Governance",
-                  "Strategic Leadership",
                   "Oil & Gas",
+                  "Procurement",
                   "Capacity Building",
                 ].map((tag) => (
                   <span
@@ -248,6 +307,29 @@ export default function About() {
                     {tag}
                   </span>
                 ))}
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="lg:col-span-2 order-1 lg:order-2"
+            >
+              <div className="relative">
+                <img
+                  src="/assets/elite_global/img/ceo-dr-momodou-faye.jpeg"
+                  alt="Dr. Momodou Faye — Deputy CEO, Elite Global Consultancy"
+                  className="w-full aspect-[3/4] object-cover object-top"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                  <h4 className="text-white text-xl font-semibold">
+                    Dr. Momodou Faye
+                  </h4>
+                  <p className="text-ibm-blue-40 text-sm font-mono uppercase tracking-widest">
+                    Deputy CEO
+                  </p>
+                </div>
               </div>
             </motion.div>
           </div>
