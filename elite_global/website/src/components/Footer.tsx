@@ -8,9 +8,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 py-16 border-b border-ibm-gray-80">
           <div className="lg:col-span-1">
             <Link to="/home" className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-ibm-blue-60 flex items-center justify-center text-white font-bold text-sm">
-                E
-              </div>
+              <img
+                src="/assets/elite_global/img/logo.webp"
+                alt="Elite Global Consultancy"
+                className="h-10 w-10 object-contain"
+              />
               <span className="text-xl font-semibold tracking-tight">
                 ELITE GLOBAL
               </span>
