@@ -7,11 +7,14 @@
  "engine": "InnoDB",
  "field_order": [
   "full_name",
+  "email",
+  "phone",
   "designation",
   "organization",
   "column_break_basic",
   "rating",
   "published",
+  "source",
   "image",
   "section_break_content",
   "testimonial",
@@ -25,6 +28,18 @@
    "in_list_view": 1,
    "label": "Full Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
   },
   {
    "fieldname": "designation",
@@ -46,6 +61,7 @@
    "default": "5",
    "fieldname": "rating",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Rating",
    "options": "1\n2\n3\n4\n5"
   },
@@ -55,6 +71,14 @@
    "fieldtype": "Check",
    "in_list_view": 1,
    "label": "Published"
+  },
+  {
+   "default": "Manual",
+   "fieldname": "source",
+   "fieldtype": "Select",
+   "label": "Source",
+   "options": "Manual\nWeb Form",
+   "read_only": 1
   },
   {
    "fieldname": "image",
@@ -86,7 +110,7 @@
  ],
  "index_web_pages_for_search": 0,
  "links": [],
- "modified": "2025-03-19 00:00:00.000000",
+ "modified": "2025-04-09 00:00:00.000000",
  "modified_by": "Administrator",
  "module": "Elite Global",
  "name": "Elite Global Testimonial",

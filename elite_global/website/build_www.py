@@ -33,6 +33,10 @@ PAGES = {
         "title": "Contact Us | Elite Global Consultancy",
         "description": "Get in touch with Elite Global Consultancy Co. Ltd in Banjul, The Gambia.",
     },
+    "review": {
+        "title": "Leave a Review | Elite Global Consultancy",
+        "description": "Share your experience working with Elite Global Consultancy. Your feedback helps us serve you better.",
+    },
 }
 
 
