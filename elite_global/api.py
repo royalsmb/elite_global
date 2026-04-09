@@ -69,7 +69,7 @@ def submit_testimonial(full_name, testimonial, rating="5", email=None, phone=Non
 		"organization": frappe.utils.escape_html((organization or "").strip()),
 		"rating": rating,
 		"testimonial": frappe.utils.escape_html(testimonial.strip()),
-		"published": 0,
+		"published": 1,
 		"source": "Web Form",
 	})
 	doc.insert(ignore_permissions=True)
